@@ -3,9 +3,8 @@
 * Delete the JavaScript array of video data from the video list component.
 
 * Use the HttpClient service to load the video data from one of these URLs:
-  * Cloud 9 users: '/api/videos'
   * StackBlitz users: 'https://api.angularbootcamp.com/videos'
-  * Everyone else: 'http://localhost:8085/videos'
+  * Local development: 'http://localhost:8085/videos'
 
 * Make sure you have the server running from inside the abc directory. The
   curriculum server is running a demo API server. For online students, the
