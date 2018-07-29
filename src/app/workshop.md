@@ -1,6 +1,6 @@
 # Workshop for this step
 
-* Delete the JavaScript array of video data from the video list component.
+* Delete the JavaScript array of video data from the video dashboard component.
 
 * Use the HttpClient service to load the video data from one of these URLs:
   * StackBlitz users: 'https://api.angularbootcamp.com/videos'
