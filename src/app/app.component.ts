@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
 
 const API_URL = 'https://api.angularbootcamp.com';
 
