@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
-const API_URL = 'https://api.angularbootcamp.com';
+const apiUrl = 'https://api.angularbootcamp.com';
 
 interface Employee {
   first_name: string;
@@ -17,7 +17,7 @@ export class AppComponent {
 
   constructor(http: HttpClient) {
     http
-      .get<Employee[]>(API_URL + '/employees')
+      .get<Employee[]>(apiUrl + '/employees')
       .subscribe(employees => this.employeeData = employees);
   }
 }
