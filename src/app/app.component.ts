@@ -18,6 +18,6 @@ export class AppComponent {
   constructor(http: HttpClient) {
     http
       .get<Employee[]>(apiUrl + '/employees')
-      .subscribe(employees => this.employeeData = employees);
+      .subscribe(employees => (this.employeeData = employees));
   }
 }
