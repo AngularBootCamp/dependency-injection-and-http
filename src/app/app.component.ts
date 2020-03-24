@@ -13,11 +13,11 @@ interface Employee {
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  employeeData: Employee[] = [];
+  employees: Employee[] = [];
 
   constructor(http: HttpClient) {
     http
       .get<Employee[]>(apiUrl + '/employees')
-      .subscribe(employees => (this.employeeData = employees));
+      .subscribe(employees => (this.employees = employees));
   }
 }
