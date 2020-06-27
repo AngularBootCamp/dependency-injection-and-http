@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
 const apiUrl = 'https://api.angularbootcamp.com';
 
 interface Employee {
-  first_name: string;
-  last_name: string;
+  firstName: string;
+  lastName: string;
 }
 
 @Component({
