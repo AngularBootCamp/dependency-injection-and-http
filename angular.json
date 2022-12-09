@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "defaultProject": "dependency-injection-and-http",
   "newProjectRoot": "projects",
   "projects": {
     "dependency-injection-and-http": {

@@ -14,10 +14,14 @@ interface Employee {
 })
 export class AppComponent {
   employees: Employee[] = [];
+  loading = true;
 
   constructor(http: HttpClient) {
     http
       .get<Employee[]>(apiUrl + '/employees')
-      .subscribe(employees => (this.employees = employees));
+      .subscribe(employees => {
+        this.loading = false;
+        this.employees = employees;
+      });
   }
 }
