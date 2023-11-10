@@ -1,3 +1,4 @@
+import { NgIf, NgFor } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
@@ -10,7 +11,9 @@ interface Employee {
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  standalone: true,
+  imports: [NgIf, NgFor]
 })
 export class AppComponent {
   employees: Employee[] = [];
